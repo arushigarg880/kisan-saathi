@@ -1,0 +1,57 @@
+{
+  "1": {
+    "id": 1,
+    "title": "Splash / Welcome (स्वागत)",
+    "stitchTitle": "Kisan Saathi Welcome Splash",
+    "status": "COMPLETE",
+    "screenName": "projects/540679928313728097/files/305c24a498534fee8ceef897c8432d19",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1V0RnCKgcTq5XUk9T3XO19gkXmDcRC1ruh8nVcf6KdgWn5cKuEAucicAtwiR5VPLFn4WOcjoAUL4P_KegAAMPyw8rlJcSUOW3ZPQnBb6IitVDSx025_3QzsPDh3vfhoBU7WwsXZwtgVFOXutHpl5QR3SGA7XuAM_PJlgoQxxj7X3BKXuHzY6vK_EKP-tQHmFOEaV0IK3wIpt8L6iXiDhKWZQizjBoMC_tg00vX6ElBsL2F2x9WvZrbm7g",
+    "localFile": "generated_screens/screen_01.png",
+    "summary": "Kisan Saathi splash screen designed to feel both modern and deeply rooted in its agricultural mission.",
+    "generatedAt": "2026-09-03T16:09:03.854Z"
+  },
+  "2": {
+    "id": 2,
+    "title": "Language Selection (भाषा चयन)",
+    "stitchTitle": "Language Selection",
+    "status": "COMPLETE",
+    "screenName": "projects/540679928313728097/screens/235ff6febcf7465ebc2e538fb9bb4621",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WM-P-Y9cf_t-UJAldfweSrlkWMJwwA4jgxQX_J7yw5_tF6WuczteGWMKNtJRJvNZMBlc3kDXbGQ4lKRbJ1gbvzsSHrYxn6bc6TIf8gh9R-PQFytArLkM-EJsl3NIEGUWgGMlQ2X3WKkBbsvb5gVoJMOIP6CgfYfYCPQTXkFXFQoU2Gm8ppzXYmaQOtuw36B4_k7wc1VA5GJ8NZUsqnjOvlJe7ttAJ37JQn-0ny0xaCx2nqhsbM7wH4MA",
+    "localFile": "generated_screens/screen_02.png",
+    "summary": "I've designed the language selection screen for Kisan Saathi with a focus on high accessibility and ease of use for all farmers.\n\n### Design Highlights:\n*   **Accessible Typography:** The header and sub-header are clear and bilingual to ensure immediate understanding.\n*   **Large Touch Targets:** Each language is presented in a generous card, making selection easy even for users with limited digital experience.\n*   **Audio Integration:** To assist users with varying literacy levels, I've included speaker icons for each language to provide audio previews of the greetings.\n*   **Clear Call-to-Action:** A sticky primary green button at the bottom provides a clear path forward, utilizing the brand's signature colors for familiarity.\n\nThe layout uses a clean white and light green palette to maintain a professional yet welcoming atmosphere that aligns with the Kisan Saathi brand.",
+    "generatedAt": "2026-09-03T16:13:20.414Z"
+  },
+  "3": {
+    "id": 3,
+    "title": "Login / Farmer Profile (लॉगिन / प्रोफ़ाइल)",
+    "stitchTitle": "A high-quality, warm, and friendly illustration of a happy Indian farmer standing in a golden wheat field, smiling and holding a modern smartphone. Professional digital art style with soft morning sunlight and agricultural green accents, consistent with the Kisan Saathi brand. White background for easy integration.",
+    "status": "COMPLETE",
+    "screenName": "projects/540679928313728097/screens/68727cd527d745c0b218961cf0fef4c4",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WaOtLO1nS5O3TwPPjzGteNi4VrprH6QHgkUJPwKsUev0G9E0H4ph9EtWYIjp40NRgAGfxnc9YBecGv3aiV1ndVQsenQslJHTjDVmZZCowNfwbWdOkMJ2Q1GNlRdOXVX30v9sQ6g7SJTEExUlaf-hPSnLuLDlq64ekwQ4Lp7u-3iRi3rLmkbBgE4nS6gIe51nXXvp5FSVsIWDbO4po4OBhha8IxJeO5PsZbSIQDgWrhy1l_6Jjvl84V4A",
+    "localFile": "generated_screens/screen_03.png",
+    "summary": "I've designed the **Farmer Login & Verification** screen for Kisan Saathi, focusing on accessibility, trust, and a welcoming visual identity.\n\n### Design Highlights:\n*   **Welcoming Illustration:** I've integrated a custom-generated illustration of a happy Indian farmer in a wheat field at the top of the screen to create an immediate sense of familiarity and warmth.\n*   **Dual-Language Clarity:** Every primary label and the main call-to-action are presented in both Hindi and English to ensure the app is accessible to all users.\n*   **Streamlined Verification:** The form features a dedicated phone number input with a +91 prefix and a 4-digit OTP flow, designed for high contrast and ease of use in various lighting conditions.\n*   **Trust & Security:** A \"Safe & Secure\" badge is prominently placed at the bottom to reassure farmers that their data is protected according to government guidelines.\n*   **Brand Alignment:** The interface uses the warm agricultural green accents and typography defined in the Kisan Saathi design system.\n\nWould you like to adjust the OTP flow, or shall we move on to the main dashboard?",
+    "generatedAt": "2026-09-03T16:14:43.943Z"
+  },
+  "4": {
+    "id": 4,
+    "title": "Create Farm Profile (नया खेत जोड़ें)",
+    "stitchTitle": "Farm Details Setup",
+    "status": "COMPLETE",
+    "screenName": "projects/540679928313728097/screens/50fa86097e14475ca294d484a43f9ec1",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1X4_WyADiKfwBT-yrF-E_Pp5VtZSqwf1tL-PpJDINTzMFpHcylI3saQHA405ciU9dhMmpDPkPzSlYa5CRcItOyFbJr8RyOxPEpHvWNRoyiTq-dKc9AitqTtCwgVNndcLn7sOH4vcjLV1QTgXwY5s-jk3gmIa2spvcjoLpIhwWpzhtSq_IPIRO10SQXi7lW7Qjnrge-8-UnP40ehX0md_YWzKlTse2okRpUyKFgPEkKeab8YK0bUpGPWQg",
+    "localFile": "generated_screens/screen_04.png",
+    "summary": "I've designed the **Farm Details Setup** screen for Kisan Saathi.\n\n### Key Design Features:\n*   **Guided Form Structure**: I used individual cards for each form section (Farm Name, Location, Area, Crops, and Irrigation) to keep the layout organized and easy to digest for farmers.\n*   **Interactive Controls**:\n    *   **Location**: Included a clear \"Use Current GPS Location\" action with a visual map snapshot for confirmation.\n    *   **Stepper & Chips**: Used a stepper for land area and icon-based selection chips for crops to minimize typing.\n*   **Brand Consistency**: The screen uses the Kisan Saathi color palette (#2d5a27) and typography, with bilingual labels (Hindi/English) to ensure accessibility for all users.\n*   **Sticky Action**: The \"Save Farm\" button is pinned to the bottom for easy access once the form is completed.\n\nDoes this layout work for the setup flow, or would you like to adjust any of the input methods?",
+    "generatedAt": "2026-09-03T16:16:09.849Z"
+  },
+  "33": {
+    "id": 33,
+    "title": "Settings & Preferences (सेटिंग्स)",
+    "stitchTitle": "Settings / Account Preferences",
+    "status": "COMPLETE",
+    "screenName": "projects/540679928313728097/screens/54af92d5ede54d9c80aa3f50a66707a2",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1VTtGl6KBoC46ibaSS3esQN5Vi5QiVC1MrjjUBLgqMkU4ISze0wr0HEIJ3ux3Q9EpGwPajJ7RwnkPGnqhzSII-b2jq-hpoEVXRbTKv7_1CDoWM2Vtq2aK3RpTCusK7hzi63HFeirKhEJmX2vM81bhEyz63hEVDLrX_w9KRCmaoKP1V6NDAM7vnwN1R9MDwOsHD1bo4rRjWol31YVKjM_Fe3OTgYgi-GuDZMVgBrE0-SH8qM-u3spK7_GA",
+    "localFile": "generated_screens/screen_33.png",
+    "summary": "I've designed the settings and account preferences screen for Kisan Saathi.\n\n### Key Features:\n- **Profile Summary**: A prominent card at the top displaying Ramesh Kumar's details, including his location and contact information.\n- **Categorized Menu**: A clean, list-based navigation for account preferences (Language, Voice, Notifications) and farm management.\n- **Offline Status**: Real-time feedback on cached data and sync status, crucial for rural agricultural use cases.\n- **Visual Consistency**: Leverages the Kisan Saathi design system with its signature green color palette, Be Vietnam Pro typography, and friendly iconography.\n- **Actionable Footer**: A clear, accessible logout button positioned at the bottom of the scrollable area.\n\nDoes this layout work for you, or would you like to adjust the grouping of any settings?",
+    "generatedAt": "2026-09-03T17:31:58.765Z"
+  }
+}

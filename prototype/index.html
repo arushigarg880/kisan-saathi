@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kisan Saathi (किसान साथी) 2.0 — End-to-End Functional Crop Health System</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Prototype Control Header -->
+  <header class="prototype-header">
+    <div class="brand-badge">
+      <div class="brand-logo">🌱</div>
+      <div>
+        <div class="brand-title">Kisan Saathi (किसान साथी) 2.0</div>
+        <div class="brand-subtitle">Functional Crop-Health Decision Support Platform</div>
+      </div>
+    </div>
+
+    <div class="header-controls">
+      <!-- Role Selector -->
+      <button class="control-btn" id="roleBtn" onclick="toggleRole()">
+        <span>👨‍🌾</span> <span id="currentRoleLabel">Farmer Mode</span>
+      </button>
+
+      <!-- Language Selector -->
+      <button class="control-btn" id="langBtn" onclick="cycleLanguage()">
+        <span>🌐</span> <span id="currentLangLabel">हिन्दी (Hindi)</span>
+      </button>
+
+      <!-- Offline Mode Toggle -->
+      <button class="control-btn" id="offlineToggleBtn" onclick="toggleOfflineMode()">
+        <span id="offlineIcon">🟢</span> <span id="offlineLabel">Online</span>
+      </button>
+
+      <!-- Demo Presets Dropdown/Menu -->
+      <button class="control-btn" style="background: #2e7d32; border-color: #4caf50;" onclick="toggleDemoDropdown()">
+        <span>🧪</span> <span>Demo Presets ▾</span>
+      </button>
+
+      <!-- Reset Flow -->
+      <button class="control-btn" onclick="goToScreen(1)">
+        <span>🔄</span> <span>Restart Flow</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Prototype Workspace -->
+  <main class="prototype-container">
+
+    <!-- Left: All 33 Screens Navigator -->
+    <aside class="catalog-panel">
+      <div class="catalog-header">
+        <div class="catalog-title">📱 All 33 Screens Navigator</div>
+        <input type="text" id="screenSearchInput" class="catalog-search" placeholder="Search screen or topic..." oninput="filterScreens()">
+      </div>
+      <div class="catalog-list" id="screensList">
+        <!-- Dynamically populated from screens_data.js -->
+      </div>
+    </aside>
+
+    <!-- Center: Interactive Mobile Device Stage -->
+    <section class="mobile-stage">
+      <div class="device-frame" id="deviceFrame">
+        <!-- Phone Notch / Dynamic Island -->
+        <div class="device-notch">
+          <div class="camera-lens"></div>
+          <div style="width: 40px; height: 4px; background: #1a202c; border-radius: 2px;"></div>
+        </div>
+
+        <!-- Phone Status Bar -->
+        <div class="device-statusbar" id="deviceStatusbar">
+          <span id="statusTime">9:41</span>
+          <div class="status-right">
+            <span id="connBadge">5G</span>
+            <span>📶</span>
+            <span>🔋 100%</span>
+          </div>
+        </div>
+
+        <!-- Scrollable Screen Stage -->
+        <div class="device-screen-wrapper" id="screenWrapper">
+          <div id="visualContainer" style="min-height: 100%;">
+            <!-- Rendered by screens.js -->
+          </div>
+        </div>
+
+        <!-- Bottom Gesture Home Bar -->
+        <div class="device-home-bar" onclick="goToNextScreen()"></div>
+      </div>
+
+      <!-- Stage Step Navigation Controls -->
+      <div class="stage-controls">
+        <button class="stage-btn" onclick="goToPrevScreen()">
+          <span>←</span> <span>पिछली स्क्रीन (Prev)</span>
+        </button>
+        <div class="screen-counter-pill" id="screenCounter">
+          Screen 1 of 33
+        </div>
+        <button class="stage-btn" onclick="goToNextScreen()">
+          <span>अगली स्क्रीन (Next)</span> <span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Right: Screen PRD Details & Audio Assistant -->
+    <aside class="details-panel">
+      <div class="detail-card">
+        <div class="card-label">CURRENT SCREEN (PRD #)</div>
+        <div class="card-title" id="screenDetailTitle">Splash / Welcome</div>
+        <div class="card-tagline" id="screenDetailTagline">Your Crop Health Companion</div>
+        <p class="card-desc" id="screenDetailDesc">
+          Establishes product identity, calm agricultural branding, and initial language selection.
+        </p>
+      </div>
+
+      <div class="detail-card">
+        <div class="card-label">VOICE GUIDANCE (आवाज सहायक)</div>
+        <button class="audio-btn" id="audioSpeakBtn" onclick="speakCurrentScreen()">
+          <span>🔊</span> <span>सलाह सुनें (Listen to Screen Advice)</span>
+        </button>
+        <div style="font-size: 11px; color: #94a3b8; margin-top: 8px; text-align: center;">
+          Synthesized voice readout in Hindi/English for farmers
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="card-label">ACTIVE MODULE WIDGETS</div>
+        <div class="widget-chips" id="widgetChipsContainer">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="card-label">DATA FLOW & SYSTEM STATE</div>
+        <div class="text-xs text-muted" id="stateDebugBox" style="line-height: 1.5;">
+          • Active Farm: उत्तर खेत (Tomato)<br>
+          • Farm Health Score: 82/100<br>
+          • Mode: Online | Input Validated
+        </div>
+      </div>
+
+      <div class="detail-card">
+        <div class="card-label">GOOGLE STITCH SPECIFICATION PROMPT</div>
+        <div class="prompt-box" id="promptTextContainer">
+          <!-- Prompt string -->
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Demo Presets Floating Modal / Dropdown -->
+  <div id="demoModal" style="display:none; position:fixed; top:70px; right:24px; width:340px; background:#1e293b; border:1px solid #334155; border-radius:14px; padding:16px; box-shadow:0 10px 30px rgba(0,0,0,0.6); z-index:200;">
+    <div class="flex-between mb-2">
+      <div class="font-bold text-sm text-white">🧪 Controlled Hackathon Demos</div>
+      <button onclick="toggleDemoDropdown()" style="background:none; border:none; color:#94a3b8; font-size:16px; cursor:pointer;">✕</button>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:8px;">
+      <button class="btn-demo" style="padding:8px;" onclick="KisanDemoPresets[0].apply(); toggleDemoDropdown();">1. Successful Diagnosis (Tomato Blight)</button>
+      <button class="btn-demo" style="padding:8px;" onclick="KisanDemoPresets[1].apply(); toggleDemoDropdown();">2. Poor Image Rejection (Blurry/Empty)</button>
+      <button class="btn-demo" style="padding:8px;" onclick="KisanDemoPresets[2].apply(); toggleDemoDropdown();">3. Low Confidence / "I Don't Know"</button>
+      <button class="btn-demo" style="padding:8px;" onclick="KisanDemoPresets[3].apply(); toggleDemoDropdown();">4. Worsening Follow-Up (+15% severity)</button>
+      <button class="btn-demo" style="padding:8px;" onclick="KisanDemoPresets[4].apply(); toggleDemoDropdown();">5. Expert Case Escalation & Validation</button>
+      <button class="btn-demo" style="padding:8px;" onclick="KisanDemoPresets[5].apply(); toggleDemoDropdown();">6. Offline Storage & Cloud Sync</button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="offline-sync-toast" id="syncToast">
+    ⚡ 3 जांच सुरक्षित कर ली गईं। नेटवर्क आने पर स्वतः सिंक होंगी!
+  </div>
+
+  <!-- Scripts in dependency order -->
+  <script src="state.js"></script>
+  <script src="intelligence.js"></script>
+  <script src="screens_data.js"></script>
+  <script src="screens.js"></script>
+  <script src="demo_presets.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
